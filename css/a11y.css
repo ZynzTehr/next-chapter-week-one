@@ -1,0 +1,165 @@
+/* ==========================================================================
+   Rest Easy Cleaning Co. - Dedicated Accessibility Stylesheet
+   Focus: Screen Readers, High Contrast, Motion Reduction, Focus States
+   ========================================================================== */
+
+/* 1. Visually Hidden / Screen-Reader Only Utility */
+.sr-only {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0, 0, 0, 0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}
+
+/* 2. Skip to Content Link */
+.skip-link {
+	position: absolute;
+	top: -100px;
+	left: 1rem;
+	background-color: var(--color-primary);
+	color: #ffffff;
+	padding: 0.8rem 1.5rem;
+	font-weight: 800;
+	font-size: 1rem;
+	text-decoration: none;
+	border-radius: 0 0 8px 8px;
+	z-index: 9999;
+	box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+	transition: top 0.2s ease-in-out;
+}
+
+.skip-link:focus {
+	top: 0;
+	outline: 3px solid #f4b740;
+	outline-offset: 2px;
+}
+
+/* 3. Focus Indicators (WCAG 2.4.7 & 2.4.11) */
+:focus-visible {
+	outline: 3px solid #0a66c2 !important;
+	outline-offset: 3px !important;
+}
+
+/* Specific focus for buttons and inputs */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible,
+[role='tab']:focus-visible {
+	outline: 3px solid #0a66c2 !important;
+	outline-offset: 2px !important;
+}
+
+/* 4. Reduced Motion Preference */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+
+	html.js-ready .io-hero,
+	html.js-ready .io-hero .hero-text-col,
+	html.js-ready .io-hero .hero-image-wrapper,
+	html.js-ready .io-flex-stagger > *,
+	html.js-ready .io-col-stagger > * {
+		opacity: 1 !important;
+		transform: none !important;
+		transition: none !important;
+		transition-delay: 0s !important;
+	}
+}
+
+/* 5. High Contrast Mode Toggle Class & Windows High Contrast */
+body.high-contrast {
+	--color-bg: #ffffff;
+	--color-surface: #ffffff;
+	--color-surface-subtle: #f0f0f0;
+	--color-border: #000000;
+	--color-border-hover: #000000;
+	--color-text-primary: #000000;
+	--color-text-secondary: #111111;
+	--color-text-tertiary: #222222;
+	--color-primary: #004d25;
+	--color-primary-light: #e0efe5;
+	--color-accent: #9a2c00;
+}
+
+body.high-contrast .feature-card,
+body.high-contrast .step-card,
+body.high-contrast .standard-item,
+body.high-contrast .form-wrapper,
+body.high-contrast .option-tile,
+body.high-contrast .form-input,
+body.high-contrast .form-select,
+body.high-contrast .form-textarea {
+	border: 2px solid #000000 !important;
+}
+
+body.high-contrast .btn-primary-action {
+	background-color: #000000 !important;
+	border-color: #000000 !important;
+	color: #ffffff !important;
+}
+
+@media (forced-colors: active) {
+	.btn-primary-action,
+	.a11y-tool-btn,
+	.option-tile:has(input:checked) {
+		forced-color-adjust: none;
+		outline: 2px solid Highlight;
+	}
+}
+
+/* 6. Larger Text Toggle Mode */
+html.text-large,
+html:has(body.text-large) {
+	font-size: 125%;
+}
+
+body.text-large {
+	--text-scale: 1.25;
+}
+
+/* 7. Inline Accessible Error Messages */
+.field-error-message {
+	display: none;
+	align-items: center;
+	gap: 0.35rem;
+	color: var(--color-error);
+	font-size: 0.85rem;
+	font-weight: 700;
+	margin-top: 0.35rem;
+}
+
+.has-error .field-error-message {
+	display: flex;
+}
+
+.has-error .form-input,
+.has-error .form-select,
+.has-error .form-textarea {
+	border-color: var(--color-error) !important;
+	background-color: var(--color-error-bg);
+}
+
+/* 8. ARIA Live Announcement Status Box */
+#a11y-announcer {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}

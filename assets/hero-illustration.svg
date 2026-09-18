@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 460" fill="none" aria-label="Illustration of a peaceful, sparkling clean, sunlit living space with comfortable armchair, plants, and cozy coffee cup" role="img">
+  <defs>
+    <!-- Warm glow gradients -->
+    <linearGradient id="sunGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5E9"/>
+      <stop offset="100%" stop-color="#EBF4EE"/>
+    </linearGradient>
+    <linearGradient id="chairGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A7558"/>
+      <stop offset="100%" stop-color="#24513C"/>
+    </linearGradient>
+    <linearGradient id="warmAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E27344"/>
+      <stop offset="100%" stop-color="#BF5426"/>
+    </linearGradient>
+    <linearGradient id="windowLight" x1="20%" y1="0%" x2="80%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#F2FAF5" stop-opacity="0.2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="600" height="460" rx="24" fill="url(#sunGlow)"/>
+
+  <!-- Floor line -->
+  <path d="M40 380H560" stroke="#D3E0D8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M60 405H540" stroke="#E3EDE6" stroke-width="2" stroke-linecap="round" stroke-dasharray="8 8"/>
+
+  <!-- Large arched window (sunlight & outdoor tranquility) -->
+  <g opacity="0.9">
+    <path d="M340 100C340 50 385 20 440 20C495 20 540 50 540 100V270H340V100Z" fill="#FFFFFF"/>
+    <!-- Window frame panes -->
+    <path d="M440 20V270" stroke="#DFECE4" stroke-width="3"/>
+    <path d="M340 140H540" stroke="#DFECE4" stroke-width="3"/>
+    <path d="M340 210H540" stroke="#DFECE4" stroke-width="3"/>
+    <!-- Window sill -->
+    <rect x="330" y="270" width="220" height="12" rx="4" fill="#CFDFD5"/>
+    <!-- Soft sun ray beam -->
+    <polygon points="370,120 540,240 480,380 280,380" fill="url(#windowLight)"/>
+  </g>
+
+  <!-- Potted Monstera / Fiddle Plant on Window Sill -->
+  <g>
+    <!-- Pot -->
+    <path d="M480 270L485 240H515L520 270H480Z" fill="url(#warmAccent)"/>
+    <!-- Leaves -->
+    <path d="M500 240C490 210 470 205 460 210C465 225 480 230 498 238" fill="#3D7D5E"/>
+    <path d="M500 240C515 215 540 215 545 225C535 235 515 238 502 240" fill="#2E6349"/>
+    <path d="M500 238C500 210 510 195 515 190C518 205 510 220 502 238" fill="#4B9471"/>
+  </g>
+
+  <!-- Modern Bookshelf (clean, organized) -->
+  <g>
+    <!-- Uprights & Shelves -->
+    <rect x="80" y="140" width="6" height="240" rx="3" fill="#A8BFB3"/>
+    <rect x="180" y="140" width="6" height="240" rx="3" fill="#A8BFB3"/>
+    <rect x="75" y="190" width="116" height="6" rx="3" fill="#BDD1C6"/>
+    <rect x="75" y="250" width="116" height="6" rx="3" fill="#BDD1C6"/>
+    <rect x="75" y="310" width="116" height="6" rx="3" fill="#BDD1C6"/>
+    <rect x="75" y="375" width="116" height="6" rx="3" fill="#BDD1C6"/>
+
+    <!-- Tidy Books -->
+    <rect x="92" y="208" width="10" height="42" rx="2" fill="#C85A2B"/>
+    <rect x="104" y="214" width="8" height="36" rx="2" fill="#43775E"/>
+    <rect x="114" y="204" width="12" height="46" rx="2" fill="#E8A856"/>
+    <rect x="128" y="218" width="9" height="32" rx="2" fill="#3A5C4C"/>
+
+    <!-- Ceramic vase on shelf -->
+    <path d="M140 190C140 178 145 174 150 174C155 174 160 178 160 190H140Z" fill="#F4E9DC"/>
+    <circle cx="150" cy="168" r="4" fill="#C85A2B"/>
+
+    <!-- Trailing plant on second shelf -->
+    <path d="M100 295C110 295 115 310 115 310H90C90 310 95 295 100 295Z" fill="#BF5426"/>
+    <path d="M96 310C92 325 90 338 95 345C98 340 98 330 98 310" stroke="#3D7D5E" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M106 310C108 322 115 330 112 340C110 332 108 320 106 310" stroke="#2E6349" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Cozy, Ergonomic Armchair (Symbol of resting easy and comfort) -->
+  <g>
+    <!-- Chair Legs -->
+    <line x1="225" y1="355" x2="215" y2="385" stroke="#7A6856" stroke-width="5" stroke-linecap="round"/>
+    <line x1="335" y1="355" x2="345" y2="385" stroke="#7A6856" stroke-width="5" stroke-linecap="round"/>
+    <line x1="240" y1="355" x2="235" y2="385" stroke="#927E6A" stroke-width="4" stroke-linecap="round"/>
+    <line x1="320" y1="355" x2="325" y2="385" stroke="#927E6A" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Chair Backrest -->
+    <path d="M220 280C215 220 235 180 280 180C325 180 345 220 340 280Z" fill="url(#chairGrad)"/>
+
+    <!-- Plump Cushion Seat -->
+    <rect x="210" y="275" width="140" height="50" rx="20" fill="#2E664C"/>
+
+    <!-- Armrests -->
+    <path d="M195 255C195 245 210 245 215 255V305C215 315 195 315 195 305V255Z" fill="#387A5B"/>
+    <path d="M345 255C345 245 365 245 365 255V305C365 315 345 315 345 305V255Z" fill="#24513C"/>
+
+    <!-- Cozy Warm Cushion / Throw Pillow -->
+    <rect x="255" y="250" width="55" height="45" rx="12" transform="rotate(-6 255 250)" fill="url(#warmAccent)"/>
+    <!-- Fold lines on pillow -->
+    <path d="M268 260C275 270 285 272 295 265" stroke="#FCEFE7" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  </g>
+
+  <!-- Side Table with Steaming Mug -->
+  <g>
+    <!-- Table top -->
+    <ellipse cx="385" cy="315" rx="35" ry="10" fill="#FDF7ED"/>
+    <path d="M350 315C350 318 365 323 385 323C405 323 420 318 420 315V320C420 325 405 329 385 329C365 329 350 325 350 320V315Z" fill="#E2D4C3"/>
+    
+    <!-- Table legs (tripod) -->
+    <line x1="370" y1="325" x2="360" y2="385" stroke="#8E7C69" stroke-width="4" stroke-linecap="round"/>
+    <line x1="400" y1="325" x2="410" y2="385" stroke="#8E7C69" stroke-width="4" stroke-linecap="round"/>
+    <line x1="385" y1="327" x2="385" y2="385" stroke="#756554" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Warm Coffee / Tea Mug -->
+    <rect x="376" y="296" width="16" height="18" rx="3" fill="#C85A2B"/>
+    <path d="M392 300C396 300 397 308 392 309" stroke="#C85A2B" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Cozy steam line -->
+    <path d="M381 290C380 285 383 283 382 278" stroke="#A68D77" stroke-width="1.8" stroke-linecap="round"/>
+    <path d="M386 288C385 284 388 282 387 276" stroke="#A68D77" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- Sparkling Clean Elements (Floating subtle glints) -->
+  <g>
+    <!-- Sparkle 1 near chair -->
+    <path d="M190 190L193 198L201 201L193 204L190 212L187 204L179 201L187 198L190 190Z" fill="#F4B740"/>
+    <circle cx="178" cy="188" r="2.5" fill="#E27344"/>
+
+    <!-- Sparkle 2 near window -->
+    <path d="M460 70L462 76L468 78L462 80L460 86L458 80L452 78L458 76L460 70Z" fill="#3D7D5E"/>
+    
+    <!-- Sparkle 3 near table -->
+    <path d="M435 280L437 285L442 287L437 289L435 294L433 289L428 287L433 285L435 280Z" fill="#F4B740"/>
+  </g>
+
+  <!-- Sparkling Clean Accent (Accessible visual motif replacing small-text banner) -->
+  <g id="sparkle-clean-accent" transform="translate(475, 360)">
+    <!-- Soft ambient glow -->
+    <circle cx="30" cy="30" r="28" fill="#FFFFFF" fill-opacity="0.75"/>
+    <circle cx="30" cy="30" r="20" fill="#E8F4ED" fill-opacity="0.85"/>
+    
+    <!-- Primary Clean Sparkle Star -->
+    <path d="M30 10 C30 21, 21 30, 10 30 C21 30, 30 39, 30 50 C30 39, 39 30, 50 30 C39 30, 30 21, 30 10 Z" fill="#24513C"/>
+    
+    <!-- Secondary Warm Gold Sparkle Star -->
+    <path d="M52 14 C52 18, 48 22, 44 22 C48 22, 52 26, 52 30 C52 26, 56 22, 60 22 C56 22, 52 18, 52 14 Z" fill="#F4B740"/>
+    
+    <!-- Tertiary Terracotta Accent Sparkle -->
+    <path d="M12 42 C12 45, 9 47, 6 47 C9 47, 12 49, 12 52 C12 49, 15 47, 18 47 C15 47, 12 45, 12 42 Z" fill="#E27344"/>
+    
+    <!-- Ambient Clean Droplets / Glints -->
+    <circle cx="48" cy="44" r="2.5" fill="#3A7558"/>
+    <circle cx="15" cy="18" r="2" fill="#F4B740"/>
+  </g>
+</svg>

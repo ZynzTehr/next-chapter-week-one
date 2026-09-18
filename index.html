@@ -1,0 +1,1239 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Rest Easy Cleaning Co. | Thoughtful Home & Office Cleaning</title>
+		<meta
+			name="description"
+			content="Warm, dependable housekeeping and office cleaning thoughtfully tailored for busy parents, bustling workplaces, and anyone who needs a gentle, judgment-free hand."
+		/>
+
+		<!-- Preconnect to Google Fonts -->
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Favicon -->
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="./assets/icon-home.svg"
+		/>
+
+		<!-- Stylesheets -->
+		<link
+			rel="stylesheet"
+			href="./css/styles.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="./css/a11y.css"
+		/>
+	</head>
+	<body>
+		<!-- Skip Navigation Link for Screen Readers & Keyboard Users -->
+		<a
+			href="#cleaning-estimate-form"
+			class="skip-link"
+		>
+			Skip directly to cleaning estimate form
+		</a>
+
+		<!-- Live region for accessible dynamic announcements -->
+		<div
+			id="a11y-announcer"
+			class="sr-only"
+			aria-live="polite"
+			aria-atomic="true"
+		></div>
+
+		<!-- Header -->
+		<header
+			class="site-header"
+			role="banner"
+		>
+			<div class="container header-inner">
+				<a
+					href="#main-content"
+					class="brand-link"
+					aria-label="Rest Easy Cleaning Co. Home"
+				>
+					<img
+						src="./assets/logo.svg"
+						alt="Rest Easy Cleaning Co."
+						class="brand-logo"
+						width="240"
+						height="48"
+					/>
+				</a>
+
+				<div class="header-controls">
+					<!-- Accessibility quick adjustments -->
+					<div
+						class="a11y-toolbar"
+						role="toolbar"
+						aria-label="Accessibility display preferences"
+					>
+						<button
+							type="button"
+							id="btn-toggle-contrast"
+							class="a11y-tool-btn"
+							aria-pressed="false"
+							title="Toggle High Contrast Mode"
+						>
+							<span aria-hidden="true"> ◐ </span>
+							<span class="sr-only"> Toggle high contrast mode </span>
+						</button>
+						<button
+							type="button"
+							id="btn-toggle-text-size"
+							class="a11y-tool-btn"
+							aria-pressed="false"
+							title="Toggle Larger Text Size"
+						>
+							<span
+								aria-hidden="true"
+								style="font-size: 1.15rem; font-weight: 800"
+							>
+								A+
+							</span>
+							<span class="sr-only"> Toggle larger text size </span>
+						</button>
+					</div>
+
+					<a
+						href="tel:5553279256"
+						class="phone-badge"
+						aria-label="Call Rest Easy Cleaning at (555) 327-9256"
+					>
+						<svg
+							width="15"
+							height="15"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+						>
+							<path
+								d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+							></path>
+						</svg>
+						<span> (555) 327-9256 </span>
+					</a>
+				</div>
+			</div>
+		</header>
+
+		<main id="main-content">
+			<!-- Hero Section -->
+			<section
+				class="hero io-hero"
+				aria-labelledby="hero-heading"
+			>
+				<div class="container hero-grid">
+					<div class="hero-text-col">
+						<div class="hero-pill">
+							<span> Compassionate, Zero-Guilt Cleaning </span>
+						</div>
+
+						<!-- Required Headline -->
+						<h1
+							id="hero-heading"
+							class="hero-title"
+						>
+							Life is a lot. Your cleaning checklist
+							<span class="highlight"> shouldn’t be </span>
+						</h1>
+
+						<!-- Required 1-Sentence Description -->
+						<p class="hero-description">
+							Warm, dependable housekeeping and office cleaning thoughtfully
+							tailored for busy parents, bustling workplaces, and anyone who
+							needs a gentle, judgment-free hand.
+						</p>
+
+						<div class="hero-trust-badges io-flex-stagger">
+							<div class="trust-item">
+								<img
+									src="assets/icon-heart.svg"
+									alt=""
+									class="trust-icon"
+									aria-hidden="true"
+								/>
+								<span> Zero-Judgment Zone </span>
+							</div>
+							<div class="trust-item">
+								<img
+									src="assets/icon-accessibility.svg"
+									alt=""
+									class="trust-icon"
+									aria-hidden="true"
+								/>
+								<span> Mobility &amp; Sensory Aware </span>
+							</div>
+							<div class="trust-item">
+								<img
+									src="assets/icon-shield.svg"
+									alt=""
+									class="trust-icon"
+									aria-hidden="true"
+								/>
+								<span> Vetted &amp; Insured </span>
+							</div>
+						</div>
+					</div>
+
+					<div class="hero-image-wrapper">
+						<img
+							src="./assets/hero-illustration.svg"
+							alt="Illustration of a cozy, serene sunlit room with clean armchair, plants, and coffee cup"
+							class="hero-illustration"
+							width="540"
+							height="414"
+						/>
+					</div>
+				</div>
+			</section>
+
+			<!-- CONTENT SECTION 1 of 3: Care That Meets You Where You Are -->
+			<section
+				class="content-section"
+				aria-labelledby="section-care-heading"
+			>
+				<div class="container">
+					<header class="section-header io-col-stagger">
+						<span class="section-tag"> Why We Are Different </span>
+						<h2
+							id="section-care-heading"
+							class="section-title"
+						>
+							Care That Meets You Where You Are
+						</h2>
+						<p class="section-subtitle">
+							Whether you’re juggling toddlers, recovering from surgery,
+							managing fatigue, or running a busy office—we believe clean spaces
+							belong to everyone, without the lecture.
+						</p>
+					</header>
+
+					<div class="feature-grid io-flex-stagger">
+						<article class="feature-card">
+							<div
+								class="feature-icon-bubble"
+								aria-hidden="true"
+							>
+								<img
+									src="assets/icon-heart.svg"
+									alt=""
+									width="26"
+									height="26"
+								/>
+							</div>
+							<h3>Zero Judgment, Ever</h3>
+							<p>
+								Dirty dishes in the sink? Laundry mountain on the chair? Toys
+								under the couch? We’ve seen it all, we get it completely, and
+								our only reaction is rolling up our sleeves with a warm smile.
+							</p>
+						</article>
+
+						<article class="feature-card">
+							<div
+								class="feature-icon-bubble accent"
+								aria-hidden="true"
+							>
+								<img
+									src="assets/icon-accessibility.svg"
+									alt=""
+									width="26"
+									height="26"
+								/>
+							</div>
+							<h3>Mobility &amp; Accessibility Minded</h3>
+							<p>
+								We leave walkways wide and completely trip-free, organize items
+								within comfortable reaching zones, and gladly follow any
+								personalized accommodation notes you share.
+							</p>
+						</article>
+
+						<article class="feature-card">
+							<div
+								class="feature-icon-bubble"
+								aria-hidden="true"
+							>
+								<img
+									src="assets/icon-sparkle.svg"
+									alt=""
+									width="26"
+									height="26"
+								/>
+							</div>
+							<h3>Sensory-Friendly Supplies</h3>
+							<p>
+								Sensitive to harsh chemical odors or loud vacuums? We offer
+								unscented, non-toxic, pet-safe plant formulas and respect
+								designated quiet hours while working.
+							</p>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<!-- CONTENT SECTION 2 of 3: How We Work (Zero Drama, Zero Fuss) -->
+			<section
+				class="content-section section-process"
+				aria-labelledby="section-process-heading"
+			>
+				<div class="container">
+					<header class="section-header io-col-stagger">
+						<span class="section-tag"> Simple &amp; Smooth </span>
+						<h2
+							id="section-process-heading"
+							class="section-title"
+						>
+							How We Work (Zero Drama, Zero Fuss)
+						</h2>
+						<p class="section-subtitle">
+							Booking quality cleaning shouldn’t feel like a second job. Here is
+							how we make it as effortless as humanly possible.
+						</p>
+					</header>
+
+					<div class="process-steps io-flex-stagger">
+						<div class="step-card">
+							<div
+								class="step-number"
+								aria-hidden="true"
+							>
+								1
+							</div>
+							<h3>Customize Your Estimate</h3>
+							<p>
+								Select whether you need home or office care, specify your rooms
+								and preferred depth, and instantly review transparent pricing
+								below.
+							</p>
+						</div>
+
+						<div class="step-card">
+							<div
+								class="step-number"
+								aria-hidden="true"
+							>
+								2
+							</div>
+							<h3>We Match Your Perfect Cleaner</h3>
+							<p>
+								We assign background-checked, insured professionals who have
+								been trained in respectful, quiet, and detail-oriented service.
+							</p>
+						</div>
+
+						<div class="step-card">
+							<div
+								class="step-number"
+								aria-hidden="true"
+							>
+								3
+							</div>
+							<h3>Relax In Pure Peace</h3>
+							<p>
+								Return to gleaming floors, fresh countertops, and that
+								unmistakable feeling of genuine calm. No guilt, just deep
+								relief.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CONTENT SECTION 3 of 3: The Rest Easy Standards -->
+			<section
+				class="content-section"
+				aria-labelledby="section-standards-heading"
+			>
+				<div class="container">
+					<header class="section-header io-col-stagger">
+						<span class="section-tag"> Uncompromising Trust </span>
+						<h2
+							id="section-standards-heading"
+							class="section-title"
+						>
+							The Rest Easy Standards
+						</h2>
+						<p class="section-subtitle">
+							Reliability means knowing exactly what to expect each and every
+							time our team steps through your door.
+						</p>
+					</header>
+
+					<div class="standards-grid io-flex-stagger">
+						<div class="standard-item">
+							<img
+								src="assets/icon-shield.svg"
+								alt=""
+								width="24"
+								height="24"
+								aria-hidden="true"
+							/>
+							<div>
+								<h4>100% Vetted &amp; Insured</h4>
+								<p>
+									Rigorous multi-state background checks and full general
+									liability insurance for total reassurance.
+								</p>
+							</div>
+						</div>
+
+						<div class="standard-item">
+							<img
+								src="assets/icon-sparkle.svg"
+								alt=""
+								width="24"
+								height="24"
+								aria-hidden="true"
+							/>
+							<div>
+								<h4>Upfront, Predictable Rates</h4>
+								<p>
+									No sudden add-on charges or cryptic fees. The estimate you see
+									is honest, fair, and honored.
+								</p>
+							</div>
+						</div>
+
+						<div class="standard-item">
+							<img
+								src="assets/icon-heart.svg"
+								alt=""
+								width="24"
+								height="24"
+								aria-hidden="true"
+							/>
+							<div>
+								<h4>Eco &amp; Pet Conscious</h4>
+								<p>
+									Effective biodegradable cleaning solutions safe for crawling
+									babies, curious cats, and sleepy dogs.
+								</p>
+							</div>
+						</div>
+
+						<div class="standard-item">
+							<img
+								src="assets/icon-home.svg"
+								alt=""
+								width="24"
+								height="24"
+								aria-hidden="true"
+							/>
+							<div>
+								<h4>Happiness Guarantee</h4>
+								<p>
+									If any corner doesn’t meet your standard, notify us within 24
+									hours and we re-clean it free of charge.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Interactive Estimate Form Section (Home vs. Office Toggle) -->
+			<section
+				class="form-section"
+				id="estimate-section"
+				aria-labelledby="form-title"
+			>
+				<div class="container">
+					<div class="form-wrapper io-col-stagger">
+						<div class="form-banner">
+							<h2 id="form-title">Instant Estimate Calculator</h2>
+							<p>
+								Select your space type and specifications for an immediate,
+								transparent estimate.
+							</p>
+						</div>
+
+						<!-- Section in the form to toggle between home and office -->
+						<div class="tab-container">
+							<div
+								class="tab-list"
+								role="tablist"
+								aria-label="Cleaning Service Location Type"
+							>
+								<button
+									type="button"
+									role="tab"
+									id="tab-home"
+									class="tab-button"
+									aria-selected="true"
+									aria-controls="panel-home"
+								>
+									<img
+										src="assets/icon-home.svg"
+										alt=""
+										width="20"
+										height="20"
+										aria-hidden="true"
+									/>
+									<span> Residential Home </span>
+								</button>
+								<button
+									type="button"
+									role="tab"
+									id="tab-office"
+									class="tab-button"
+									aria-selected="false"
+									aria-controls="panel-office"
+									tabindex="-1"
+								>
+									<img
+										src="assets/icon-office.svg"
+										alt=""
+										width="20"
+										height="20"
+										aria-hidden="true"
+									/>
+									<span> Commercial Office </span>
+								</button>
+							</div>
+						</div>
+
+						<form
+							id="cleaning-estimate-form"
+							class="form-content"
+							novalidate
+						>
+							<!-- Home Cleaning Panel -->
+							<div
+								id="panel-home"
+								class="tab-panel"
+								role="tabpanel"
+								aria-labelledby="tab-home"
+							>
+								<fieldset class="form-fieldset">
+									<legend class="form-legend">
+										1. Home Layout &amp; Location
+									</legend>
+									<div class="field-grid">
+										<div class="form-group">
+											<label
+												for="home-zip"
+												class="form-label"
+											>
+												<span> ZIP Code <span aria-hidden="true">*</span></span>
+												<span class="label-hint"> 5 digits </span>
+											</label>
+											<input
+												type="text"
+												id="home-zip"
+												name="home-zip"
+												class="form-input"
+												placeholder="e.g. 97201"
+												pattern="[0-9]{5}"
+												inputmode="numeric"
+												maxlength="5"
+												autocomplete="postal-code"
+												required
+												aria-describedby="home-zip-error"
+											/>
+											<div
+												id="home-zip-error"
+												class="field-error-message"
+												role="alert"
+											>
+												<span aria-hidden="true">⚠️</span> Please enter a valid
+												5-digit ZIP code.
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label
+												for="home-bedrooms"
+												class="form-label"
+											>
+												Bedrooms
+											</label>
+											<select
+												id="home-bedrooms"
+												name="home-bedrooms"
+												class="form-select"
+											>
+												<option value="1">1 Bedroom / Studio</option>
+												<option
+													value="2"
+													selected
+												>
+													2 Bedrooms
+												</option>
+												<option value="3">3 Bedrooms</option>
+												<option value="4">4 Bedrooms</option>
+												<option value="5">5+ Bedrooms</option>
+											</select>
+										</div>
+
+										<div class="form-group">
+											<label
+												for="home-bathrooms"
+												class="form-label"
+											>
+												Bathrooms
+											</label>
+											<select
+												id="home-bathrooms"
+												name="home-bathrooms"
+												class="form-select"
+											>
+												<option value="1">1 Bathroom</option>
+												<option
+													value="2"
+													selected
+												>
+													2 Bathrooms
+												</option>
+												<option value="3">3 Bathrooms</option>
+												<option value="4">4+ Bathrooms</option>
+											</select>
+										</div>
+									</div>
+								</fieldset>
+
+								<fieldset class="form-fieldset">
+									<legend class="form-legend">2. Cleaning Depth</legend>
+									<div class="options-tile-grid">
+										<label class="option-tile">
+											<input
+												type="radio"
+												name="home-service"
+												value="standard"
+												checked
+											/>
+											<span class="option-title"> Standard Clean </span>
+											<span class="option-desc"> Maintenance upkeep </span>
+										</label>
+										<label class="option-tile">
+											<input
+												type="radio"
+												name="home-service"
+												value="deep"
+											/>
+											<span class="option-title"> Deep Cleaning </span>
+											<span class="option-desc"> Baseboards &amp; detail </span>
+										</label>
+										<label class="option-tile">
+											<input
+												type="radio"
+												name="home-service"
+												value="move"
+											/>
+											<span class="option-title"> Move In / Out </span>
+											<span class="option-desc"> Full empty turnover </span>
+										</label>
+									</div>
+								</fieldset>
+
+								<fieldset class="form-fieldset">
+									<legend class="form-legend">3. Frequency</legend>
+									<div class="options-tile-grid">
+										<label class="option-tile">
+											<input
+												type="radio"
+												name="home-frequency"
+												value="one-time"
+											/>
+											<span class="option-title"> One-Time </span>
+											<span class="option-desc"> Single visit </span>
+										</label>
+										<label class="option-tile">
+											<input
+												type="radio"
+												name="home-frequency"
+												value="weekly"
+											/>
+											<span class="option-title"> Weekly </span>
+											<span class="option-desc"> Save 20% </span>
+										</label>
+										<label class="option-tile">
+											<input
+												type="radio"
+												name="home-frequency"
+												value="biweekly"
+												checked
+											/>
+											<span class="option-title"> Every 2 Weeks </span>
+											<span class="option-desc"> Save 15% (Popular) </span>
+										</label>
+										<label class="option-tile">
+											<input
+												type="radio"
+												name="home-frequency"
+												value="monthly"
+											/>
+											<span class="option-title"> Monthly </span>
+											<span class="option-desc"> Save 10% </span>
+										</label>
+									</div>
+								</fieldset>
+
+								<fieldset class="form-fieldset">
+									<legend class="form-legend">
+										4. Accessibility &amp; Contact Details
+									</legend>
+									<div class="a11y-callout">
+										<strong>Inclusive Care Note:</strong> Have mobility needs,
+										low-scent preferences, or quiet cleaning requests? Tell us
+										below and we will gladly accommodate without hesitation.
+									</div>
+
+									<div class="form-group">
+										<label
+											for="home-notes"
+											class="form-label"
+										>
+											<span> Special Notes / Accessibility Requests </span>
+											<span class="label-hint"> Optional </span>
+										</label>
+										<textarea
+											id="home-notes"
+											name="home-notes"
+											class="form-textarea"
+											placeholder="e.g. Ramp entrance on left, please use unscented soap, keep hallway clear, quiet cleaning during baby naptime..."
+										></textarea>
+									</div>
+
+									<div class="field-grid">
+										<div class="form-group">
+											<label
+												for="home-name"
+												class="form-label"
+											>
+												Full Name <span aria-hidden="true">*</span></label
+											>
+											<input
+												type="text"
+												id="home-name"
+												name="home-name"
+												class="form-input"
+												placeholder="e.g. Alex Taylor"
+												autocomplete="name"
+												required
+												aria-describedby="home-name-error"
+											/>
+											<div
+												id="home-name-error"
+												class="field-error-message"
+												role="alert"
+											>
+												<span aria-hidden="true">⚠️</span> Please provide your
+												name.
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label
+												for="home-email"
+												class="form-label"
+											>
+												Email Address <span aria-hidden="true">*</span></label
+											>
+											<input
+												type="email"
+												id="home-email"
+												name="home-email"
+												class="form-input"
+												placeholder="alex@example.com"
+												autocomplete="email"
+												required
+												aria-describedby="home-email-error"
+											/>
+											<div
+												id="home-email-error"
+												class="field-error-message"
+												role="alert"
+											>
+												<span aria-hidden="true">⚠️</span> Please enter a valid
+												email address.
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label
+												for="home-phone"
+												class="form-label"
+											>
+												Phone Number <span aria-hidden="true">*</span></label
+											>
+											<input
+												type="tel"
+												id="home-phone"
+												name="home-phone"
+												class="form-input"
+												placeholder="(555) 000-0000"
+												autocomplete="tel"
+												required
+												aria-describedby="home-phone-error"
+											/>
+											<div
+												id="home-phone-error"
+												class="field-error-message"
+												role="alert"
+											>
+												<span aria-hidden="true">⚠️</span> Please enter a valid
+												10-digit phone number.
+											</div>
+										</div>
+									</div>
+								</fieldset>
+							</div>
+
+							<!-- Office Cleaning Panel -->
+							<div
+								id="panel-office"
+								class="tab-panel"
+								role="tabpanel"
+								aria-labelledby="tab-office"
+								hidden
+							>
+								<fieldset class="form-fieldset">
+									<legend class="form-legend">
+										1. Office Size &amp; Location
+									</legend>
+									<div class="field-grid">
+										<div class="form-group">
+											<label
+												for="office-zip"
+												class="form-label"
+											>
+												<span> ZIP Code <span aria-hidden="true">*</span></span>
+												<span class="label-hint"> 5 digits </span>
+											</label>
+											<input
+												type="text"
+												id="office-zip"
+												name="office-zip"
+												class="form-input"
+												placeholder="e.g. 97204"
+												pattern="[0-9]{5}"
+												inputmode="numeric"
+												maxlength="5"
+												autocomplete="postal-code"
+												required
+												disabled
+												aria-describedby="office-zip-error"
+											/>
+											<div
+												id="office-zip-error"
+												class="field-error-message"
+												role="alert"
+											>
+												<span aria-hidden="true">⚠️</span> Please enter a valid
+												5-digit ZIP code.
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label
+												for="office-size"
+												class="form-label"
+											>
+												Office Square Footage
+											</label>
+											<select
+												id="office-size"
+												name="office-size"
+												class="form-select"
+												disabled
+											>
+												<option
+													value="small"
+													selected
+												>
+													Under 1,000 sq ft (Cozy / Boutique)
+												</option>
+												<option value="medium">
+													1,000 – 2,500 sq ft (Mid-size Team)
+												</option>
+												<option value="large">
+													2,500 – 5,000 sq ft (Multi-Room Suite)
+												</option>
+												<option value="xlarge">
+													5,000+ sq ft (Full Floor / Commercial)
+												</option>
+											</select>
+										</div>
+
+										<div class="form-group">
+											<label
+												for="office-restrooms"
+												class="form-label"
+											>
+												Restrooms
+											</label>
+											<select
+												id="office-restrooms"
+												name="office-restrooms"
+												class="form-select"
+												disabled
+											>
+												<option value="1">1 Restroom</option>
+												<option
+													value="2"
+													selected
+												>
+													2 Restrooms
+												</option>
+												<option value="3">3 Restrooms</option>
+												<option value="4">4+ Restrooms</option>
+											</select>
+										</div>
+									</div>
+								</fieldset>
+
+								<fieldset class="form-fieldset">
+									<legend class="form-legend">2. Office Cleaning Scope</legend>
+									<div class="options-tile-grid">
+										<label class="option-tile">
+											<input
+												type="radio"
+												name="office-service"
+												value="standard"
+												checked
+												disabled
+											/>
+											<span class="option-title"> Standard Upkeep </span>
+											<span class="option-desc">
+												Trash, desks &amp; floors
+											</span>
+										</label>
+										<label class="option-tile">
+											<input
+												type="radio"
+												name="office-service"
+												value="deep"
+												disabled
+											/>
+											<span class="option-title"> Deep Sanitize </span>
+											<span class="option-desc"> Kitchen &amp; restrooms </span>
+										</label>
+										<label class="option-tile">
+											<input
+												type="radio"
+												name="office-service"
+												value="turnover"
+												disabled
+											/>
+											<span class="option-title"> After-Hours Reset </span>
+											<span class="option-desc"> Full evening refresh </span>
+										</label>
+									</div>
+								</fieldset>
+
+								<fieldset class="form-fieldset">
+									<legend class="form-legend">3. Frequency</legend>
+									<div class="options-tile-grid">
+										<label class="option-tile">
+											<input
+												type="radio"
+												name="office-frequency"
+												value="one-time"
+												disabled
+											/>
+											<span class="option-title"> One-Time </span>
+											<span class="option-desc"> Single deep clean </span>
+										</label>
+										<label class="option-tile">
+											<input
+												type="radio"
+												name="office-frequency"
+												value="weekly"
+												disabled
+											/>
+											<span class="option-title"> Weekly </span>
+											<span class="option-desc"> Save 20% </span>
+										</label>
+										<label class="option-tile">
+											<input
+												type="radio"
+												name="office-frequency"
+												value="biweekly"
+												checked
+												disabled
+											/>
+											<span class="option-title"> Every 2 Weeks </span>
+											<span class="option-desc"> Save 15% </span>
+										</label>
+										<label class="option-tile">
+											<input
+												type="radio"
+												name="office-frequency"
+												value="monthly"
+												disabled
+											/>
+											<span class="option-title"> Monthly </span>
+											<span class="option-desc"> Save 10% </span>
+										</label>
+									</div>
+								</fieldset>
+
+								<fieldset class="form-fieldset">
+									<legend class="form-legend">
+										4. Building Access &amp; Contact Details
+									</legend>
+									<div class="form-group">
+										<label
+											for="office-notes"
+											class="form-label"
+										>
+											<span>Building Access &amp; Accessibility Notes</span>
+											<span class="label-hint">Optional</span>
+										</label>
+										<textarea
+											id="office-notes"
+											name="office-notes"
+											class="form-textarea"
+											placeholder="e.g. Security badge pickup at front desk, elevator access, after 6 PM preferred, fragrance-free requested..."
+											disabled
+										></textarea>
+									</div>
+
+									<div class="field-grid">
+										<div class="form-group">
+											<label
+												for="office-name"
+												class="form-label"
+											>
+												Company &amp; Contact Name
+												<span aria-hidden="true">*</span>
+											</label>
+											<input
+												type="text"
+												id="office-name"
+												name="office-name"
+												class="form-input"
+												placeholder="e.g. Acme Studio (attn: Jordan)"
+												autocomplete="organization"
+												required
+												disabled
+												aria-describedby="office-name-error"
+											/>
+											<div
+												id="office-name-error"
+												class="field-error-message"
+												role="alert"
+											>
+												<span aria-hidden="true">⚠️</span> Please provide
+												company and contact name.
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label
+												for="office-email"
+												class="form-label"
+											>
+												Work Email <span aria-hidden="true">*</span></label
+											>
+											<input
+												type="email"
+												id="office-email"
+												name="office-email"
+												class="form-input"
+												placeholder="jordan@acme.com"
+												autocomplete="email"
+												required
+												disabled
+												aria-describedby="office-email-error"
+											/>
+											<div
+												id="office-email-error"
+												class="field-error-message"
+												role="alert"
+											>
+												<span aria-hidden="true">⚠️</span> Please enter a valid
+												work email.
+											</div>
+										</div>
+
+										<div class="form-group">
+											<label
+												for="office-phone"
+												class="form-label"
+												>Phone Number <span aria-hidden="true">*</span></label
+											>
+											<input
+												type="tel"
+												id="office-phone"
+												name="office-phone"
+												class="form-input"
+												placeholder="(555) 000-0000"
+												autocomplete="tel"
+												required
+												disabled
+												aria-describedby="office-phone-error"
+											/>
+											<div
+												id="office-phone-error"
+												class="field-error-message"
+												role="alert"
+											>
+												<span aria-hidden="true">⚠️</span> Please enter a valid
+												10-digit phone number.
+											</div>
+										</div>
+									</div>
+								</fieldset>
+							</div>
+
+							<!-- Live Transparent Calculation Box -->
+							<div
+								class="estimate-summary-box"
+								aria-live="polite"
+							>
+								<div class="estimate-detail-col">
+									<span class="estimate-label"> Live Estimated Rate </span>
+									<span
+										id="live-estimate-range"
+										class="estimate-price-range"
+									>
+										$130 – $155
+									</span>
+									<span
+										id="live-frequency-note"
+										class="estimate-frequency-note"
+									>
+										per visit • Every 2 Weeks (15% Off)
+									</span>
+								</div>
+								<div>
+									<span
+										id="live-discount-badge"
+										class="estimate-badge"
+									>
+										15% recurring discount applied
+									</span>
+								</div>
+							</div>
+
+							<!-- The Single Action Button per constraint -->
+							<div class="action-container">
+								<button
+									type="submit"
+									id="btn-get-estimate"
+									class="btn-primary-action"
+								>
+									<span aria-hidden="true">📋</span>
+									<span> Get My Estimate </span>
+								</button>
+								<div class="action-guarantee">
+									<img
+										src="assets/icon-shield.svg"
+										alt=""
+										width="16"
+										height="16"
+										aria-hidden="true"
+									/>
+									<span>
+										Free instant quote. No credit card or commitment required.
+									</span>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer
+			class="site-footer"
+			role="contentinfo"
+		>
+			<div class="container footer-inner">
+				<img
+					src="assets/logo.svg"
+					alt="Rest Easy Cleaning Co."
+					width="190"
+					height="38"
+					style="opacity: 0.85"
+				/>
+				<p class="footer-quote">
+					"Because adulting is hard, time is precious, and clean counters
+					shouldn’t come with exhaustion or guilt."
+				</p>
+				<p class="footer-copy">
+					&copy; 2026 Rest Easy Cleaning Co. All rights reserved. Thoughtfully
+					crafted for accessible living.
+				</p>
+			</div>
+		</footer>
+
+		<!-- Confirmation Dialog (Accessible Modal) -->
+		<dialog
+			id="estimate-modal"
+			class="estimate-dialog"
+			aria-labelledby="modal-title"
+		>
+			<div class="dialog-header">
+				<h3 id="modal-title">Your Estimate is Ready!</h3>
+				<button
+					type="button"
+					id="btn-close-dialog"
+					class="dialog-close-btn"
+					aria-label="Close estimate dialog"
+				>
+					&times;
+				</button>
+			</div>
+			<div class="dialog-body">
+				<p>
+					Thank you for requesting an estimate with
+					<strong>Rest Easy Cleaning Co.</strong>! Here is your personalized
+					breakdown:
+				</p>
+				<ul
+					id="modal-summary-details"
+					class="dialog-summary-list"
+				>
+					<!-- Injected dynamically by main.js -->
+				</ul>
+				<p style="font-size: 0.9rem; color: var(--color-text-secondary)">
+					Our friendly coordinator will reach out shortly via phone or email to
+					confirm your preferred time slot and any specific accessibility
+					requests.
+				</p>
+			</div>
+			<div class="dialog-footer">
+				<button
+					type="button"
+					id="btn-dialog-done"
+					class="btn-secondary"
+				>
+					Done
+				</button>
+			</div>
+		</dialog>
+
+		<!-- Application Scripts -->
+		<script src="js/estimate.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
