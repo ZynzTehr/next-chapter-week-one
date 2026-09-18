@@ -16,6 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const dialogDoneBtn = document.getElementById('btn-dialog-done');
   const announcer = document.getElementById('a11y-announcer');
 
+  // Mobile Phone Action Dialog Elements
+  const headerPhoneBadge = document.getElementById('header-phone-badge');
+  const phoneModal = document.getElementById('phone-modal');
+  const closePhoneDialogBtn = document.getElementById('btn-close-phone-dialog');
+  const phoneContinueBtn = document.getElementById('btn-phone-continue');
+  const phoneCallDirectBtn = document.getElementById('btn-phone-call-direct');
+
   // Estimate display elements
   const estimateRangeEl = document.getElementById('live-estimate-range');
   const estimateFreqEl = document.getElementById('live-frequency-note');
@@ -319,6 +326,66 @@ document.addEventListener('DOMContentLoaded', () => {
       );
       if (!isInDialog) {
         estimateDialog.close();
+      }
+    });
+  }
+
+  // 4b. Mobile Phone Action Modal Handler (<425px)
+  if (headerPhoneBadge && phoneModal) {
+    headerPhoneBadge.addEventListener('click', (e) => {
+      // Intercept phone click on mobile viewports (<= 425px) to show call / continue options
+      if (window.innerWidth <= 425) {
+        e.preventDefault();
+        if (typeof phoneModal.showModal === 'function') {
+          phoneModal.showModal();
+        } else {
+          phoneModal.setAttribute('open', '');
+        }
+        announce('Call options dialog opened. Press Escape to close.');
+        closePhoneDialogBtn?.focus();
+      }
+      // On screens > 425px, normal link navigation (tel:5553279256) is preserved
+    });
+
+    [closePhoneDialogBtn, phoneContinueBtn].forEach((btn) => {
+      btn?.addEventListener('click', () => {
+        if (typeof phoneModal.close === 'function') {
+          phoneModal.close();
+        } else {
+          phoneModal.removeAttribute('open');
+        }
+      });
+    });
+
+    if (phoneCallDirectBtn) {
+      phoneCallDirectBtn.addEventListener('click', () => {
+        setTimeout(() => {
+          if (typeof phoneModal.close === 'function') {
+            phoneModal.close();
+          }
+        }, 400);
+      });
+    }
+
+    phoneModal.addEventListener('close', () => {
+      headerPhoneBadge?.focus();
+      announce('Call options dialog closed.');
+    });
+
+    phoneModal.addEventListener('click', (e) => {
+      const rect = phoneModal.getBoundingClientRect();
+      const isInDialog = (
+        rect.top <= e.clientY &&
+        e.clientY <= rect.top + rect.height &&
+        rect.left <= e.clientX &&
+        e.clientX <= rect.left + rect.width
+      );
+      if (!isInDialog) {
+        if (typeof phoneModal.close === 'function') {
+          phoneModal.close();
+        } else {
+          phoneModal.removeAttribute('open');
+        }
       }
     });
   }

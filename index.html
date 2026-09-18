@@ -117,6 +117,7 @@
 
 					<a
 						href="tel:5553279256"
+						id="header-phone-badge"
 						class="phone-badge"
 						aria-label="Call Rest Easy Cleaning at (555) 327-9256"
 					>
@@ -135,7 +136,7 @@
 								d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
 							></path>
 						</svg>
-						<span> (555) 327-9256 </span>
+						<span class="phone-number-text"> (555) 327-9256 </span>
 					</a>
 				</div>
 			</div>
@@ -293,6 +294,25 @@
 								designated quiet hours while working.
 							</p>
 						</article>
+
+						<!-- Tablet 768px Grid Balance Card -->
+						<article class="feature-card feature-card-visual tablet-grid-filler">
+							<div class="feature-card-svg-wrap">
+								<img
+									src="assets/illustration-sanctuary.svg"
+									alt="Warm sunlit living room with comfortable armchair and green houseplant"
+									width="360"
+									height="240"
+									class="grid-filler-svg"
+									loading="lazy"
+								/>
+							</div>
+							<h3>Your Calming Sanctuary</h3>
+							<p>
+								Every space we touch is restored to calm, quiet order. Enjoy spotless surfaces,
+								fresh air, and the soothing tranquility of a truly cared-for home.
+							</p>
+						</article>
 					</div>
 				</div>
 			</section>
@@ -361,6 +381,31 @@
 								relief.
 							</p>
 						</div>
+
+						<!-- Tablet 768px Grid Balance Step Card -->
+						<div class="step-card step-card-visual tablet-grid-filler">
+							<div class="step-card-svg-wrap">
+								<img
+									src="assets/illustration-guarantee.svg"
+									alt="Rest Easy satisfaction guarantee seal and verified cleaning checklist"
+									width="360"
+									height="240"
+									class="grid-filler-svg"
+									loading="lazy"
+								/>
+							</div>
+							<div
+								class="step-number"
+								aria-hidden="true"
+							>
+								4
+							</div>
+							<h3>100% Worry-Free Guarantee</h3>
+							<p>
+								If any corner doesn't meet your expectation, let us know within 24 hours.
+								We'll gladly re-clean it free of charge—no questions, no drama.
+							</p>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -385,72 +430,140 @@
 						</p>
 					</header>
 
-					<div class="standards-grid io-flex-stagger">
-						<div class="standard-item">
-							<img
-								src="assets/icon-shield.svg"
-								alt=""
-								width="24"
-								height="24"
-								aria-hidden="true"
-							/>
-							<div>
-								<h4>100% Vetted &amp; Insured</h4>
-								<p>
-									Rigorous multi-state background checks and full general
-									liability insurance for total reassurance.
-								</p>
+					<div class="standards-carousel-wrapper">
+						<div class="standards-carousel-track io-flex-stagger">
+							<!-- Primary Standards Cards -->
+							<div class="standard-item">
+								<img
+									src="assets/icon-shield.svg"
+									alt=""
+									width="24"
+									height="24"
+									aria-hidden="true"
+								/>
+								<div>
+									<h4>100% Vetted &amp; Insured</h4>
+									<p>
+										Rigorous multi-state background checks and full general
+										liability insurance for total reassurance.
+									</p>
+								</div>
 							</div>
-						</div>
 
-						<div class="standard-item">
-							<img
-								src="assets/icon-sparkle.svg"
-								alt=""
-								width="24"
-								height="24"
-								aria-hidden="true"
-							/>
-							<div>
-								<h4>Upfront, Predictable Rates</h4>
-								<p>
-									No sudden add-on charges or cryptic fees. The estimate you see
-									is honest, fair, and honored.
-								</p>
+							<div class="standard-item">
+								<img
+									src="assets/icon-sparkle.svg"
+									alt=""
+									width="24"
+									height="24"
+									aria-hidden="true"
+								/>
+								<div>
+									<h4>Upfront, Predictable Rates</h4>
+									<p>
+										No sudden add-on charges or cryptic fees. The estimate you see
+										is honest, fair, and honored.
+									</p>
+								</div>
 							</div>
-						</div>
 
-						<div class="standard-item">
-							<img
-								src="assets/icon-heart.svg"
-								alt=""
-								width="24"
-								height="24"
-								aria-hidden="true"
-							/>
-							<div>
-								<h4>Eco &amp; Pet Conscious</h4>
-								<p>
-									Effective biodegradable cleaning solutions safe for crawling
-									babies, curious cats, and sleepy dogs.
-								</p>
+							<div class="standard-item">
+								<img
+									src="assets/icon-heart.svg"
+									alt=""
+									width="24"
+									height="24"
+									aria-hidden="true"
+								/>
+								<div>
+									<h4>Eco &amp; Pet Conscious</h4>
+									<p>
+										Effective biodegradable cleaning solutions safe for crawling
+										babies, curious cats, and sleepy dogs.
+									</p>
+								</div>
 							</div>
-						</div>
 
-						<div class="standard-item">
-							<img
-								src="assets/icon-home.svg"
-								alt=""
-								width="24"
-								height="24"
-								aria-hidden="true"
-							/>
-							<div>
-								<h4>Happiness Guarantee</h4>
-								<p>
-									If any corner doesn’t meet your standard, notify us within 24
-									hours and we re-clean it free of charge.
-								</p>
+							<div class="standard-item">
+								<img
+									src="assets/icon-home.svg"
+									alt=""
+									width="24"
+									height="24"
+									aria-hidden="true"
+								/>
+								<div>
+									<h4>Happiness Guarantee</h4>
+									<p>
+										If any corner doesn’t meet your standard, notify us within 24
+										hours and we re-clean it free of charge.
+									</p>
+								</div>
+							</div>
+
+							<!-- Duplicate set for seamless infinite right-to-left loop (aria-hidden for screen reader accessibility) -->
+							<div class="standard-item" aria-hidden="true">
+								<img
+									src="assets/icon-shield.svg"
+									alt=""
+									width="24"
+									height="24"
+								/>
+								<div>
+									<h4>100% Vetted &amp; Insured</h4>
+									<p>
+										Rigorous multi-state background checks and full general
+										liability insurance for total reassurance.
+									</p>
+								</div>
+							</div>
+
+							<div class="standard-item" aria-hidden="true">
+								<img
+									src="assets/icon-sparkle.svg"
+									alt=""
+									width="24"
+									height="24"
+								/>
+								<div>
+									<h4>Upfront, Predictable Rates</h4>
+									<p>
+										No sudden add-on charges or cryptic fees. The estimate you see
+										is honest, fair, and honored.
+									</p>
+								</div>
+							</div>
+
+							<div class="standard-item" aria-hidden="true">
+								<img
+									src="assets/icon-heart.svg"
+									alt=""
+									width="24"
+									height="24"
+								/>
+								<div>
+									<h4>Eco &amp; Pet Conscious</h4>
+									<p>
+										Effective biodegradable cleaning solutions safe for crawling
+										babies, curious cats, and sleepy dogs.
+									</p>
+								</div>
+							</div>
+
+							<div class="standard-item" aria-hidden="true">
+								<img
+									src="assets/icon-home.svg"
+									alt=""
+									width="24"
+									height="24"
+								/>
+								<div>
+									<h4>Happiness Guarantee</h4>
+									<p>
+										If any corner doesn’t meet your standard, notify us within 24
+										hours and we re-clean it free of charge.
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -1229,6 +1342,84 @@
 				>
 					Done
 				</button>
+			</div>
+		</dialog>
+
+		<!-- Mobile Phone Action Dialog -->
+		<dialog
+			id="phone-modal"
+			class="phone-dialog"
+			aria-labelledby="phone-modal-title"
+		>
+			<div class="dialog-header">
+				<div class="phone-dialog-title-group">
+					<span class="phone-dialog-icon-bubble" aria-hidden="true">
+						<svg
+							width="18"
+							height="18"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path
+								d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+							></path>
+						</svg>
+					</span>
+					<h3 id="phone-modal-title">Call Rest Easy Cleaning</h3>
+				</div>
+				<button
+					type="button"
+					id="btn-close-phone-dialog"
+					class="dialog-close-btn"
+					aria-label="Close call options dialog"
+				>
+					&times;
+				</button>
+			</div>
+			<div class="dialog-body phone-dialog-body">
+				<p class="phone-dialog-desc">
+					Speak directly with our friendly coordinator for instant scheduling, tailored service, or special accessibility accommodations.
+				</p>
+				<div class="phone-dialog-number-box">
+					<span class="phone-dialog-label">Direct Care Line</span>
+					<span class="phone-dialog-number">(555) 327-9256</span>
+					<span class="phone-dialog-hours">Mon–Sat • 8:00 AM – 7:00 PM</span>
+				</div>
+				<div class="phone-dialog-actions">
+					<a
+						href="tel:5553279256"
+						id="btn-phone-call-direct"
+						class="btn-primary-action phone-call-action-btn"
+					>
+						<svg
+							width="18"
+							height="18"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							aria-hidden="true"
+						>
+							<path
+								d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+							></path>
+						</svg>
+						<span>Call (555) 327-9256</span>
+					</a>
+					<button
+						type="button"
+						id="btn-phone-continue"
+						class="btn-secondary phone-continue-btn"
+					>
+						Continue on Site
+					</button>
+				</div>
 			</div>
 		</dialog>
 

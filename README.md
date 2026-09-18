@@ -65,7 +65,7 @@ This codebase was engineered under strict client-mandated constraints. Every int
 |   - Semantic Landmarks: header, main, nav, section, dialog                                       |
 |   - Hero Value Proposition and Single-Sentence Mission Statement                                 |
 |   - Three Disciplined Content Sections                                                           |
-|   - Single Action Form: Get My Estimate                                                         |
+|   - Single Action Form: Get My Estimate                                                          |
 +------------------------------------------------+-------------------------------------------------+
                                                  |
                         +------------------------+------------------------+
@@ -102,7 +102,7 @@ This codebase was engineered under strict client-mandated constraints. Every int
 
 ```text
 +--------+      User Input      +-----------+     Validation Check     +--------------+
-|  IDLE  | -------------------> |  EDITING  | -----------------------> |  VALIDATING  |
+|  IDLE  | -------------------> |  EDITING  | -----------------------> |  VALIDATING   |
 +--------+                      +-----------+                          +--------------+
                                       |                                       |
                      Live Rate Sync   |                          +------------+------------+
@@ -141,7 +141,7 @@ The page structure follows a strict three part hierarchy:
 
 - Section One: Care That Meets You Where You Are. Focuses on zero judgment service, mobility accommodations, ramp access, and unscented cleaning supplies.
 - Section Two: How We Work. Outlines a straightforward three step service flow covering estimate selection, vetted team dispatch, and sparkling results.
-- Section Three: The Rest Easy Standards. Details insurance coverage, transparent pricing, pet safe products, and satisfaction guarantees.
+- Section Three: The Rest Easy Standards. Highlights insurance coverage, transparent pricing, eco & pet safe products, and satisfaction guarantees presented in a smooth right-to-left continuous carousel-manner scroll.
 
 ### 3. Unified Dual Track Estimator
 
@@ -205,7 +205,9 @@ next-chapter-week-one/
 │   ├── icon-heart.svg  Care and empathy icon
 │   ├── icon-accessibility.svg Mobility and sensory awareness icon
 │   ├── icon-sparkle.svg Gentle supplies icon
-│   └── icon-shield.svg Insured and vetted provider icon
+│   ├── icon-shield.svg Insured and vetted provider icon
+│   ├── illustration-sanctuary.svg Calming sanctuary tablet grid vector art
+│   └── illustration-guarantee.svg 100% satisfaction guarantee tablet grid vector art
 ├── .gitignore          Operating system and temporary file exclusion rules
 └── README.md           Comprehensive project and architectural documentation
 ```

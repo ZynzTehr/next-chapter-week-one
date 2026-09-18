@@ -359,6 +359,35 @@ button, input, select, textarea {
   border-color: var(--color-border-hover);
 }
 
+/* Tablet Grid Filler Cards (Shown ONLY at 768px tablet breakpoint)
+   Strictly hidden on all other screen sizes (desktop, mobile) to keep the 3-item layout */
+.tablet-grid-filler,
+.feature-card.tablet-grid-filler,
+.step-card.tablet-grid-filler {
+  display: none !important;
+}
+
+.feature-card-svg-wrap,
+.step-card-svg-wrap {
+  width: 100%;
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  margin-bottom: var(--space-md);
+  background-color: var(--color-surface-subtle);
+  border: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-filler-svg {
+  width: 100%;
+  height: auto;
+  max-height: 180px;
+  object-fit: cover;
+  display: block;
+}
+
 .feature-icon-bubble {
   width: 52px;
   height: 52px;
@@ -442,15 +471,29 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
-   Section 3: "The Rest Easy Standards"
+   Section 3: "The Rest Easy Standards" (Carousel-Manner Infinite Scroll)
    ========================================================================== */
-.standards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: var(--space-md);
+.standards-carousel-wrapper {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  padding: var(--space-xs) 0;
+  mask-image: linear-gradient(to right, transparent, black 2.5%, black 97.5%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 2.5%, black 97.5%, transparent);
 }
 
-.standard-item {
+.standards-carousel-track {
+  display: flex;
+  gap: var(--space-md);
+  width: max-content;
+  padding-right: var(--space-md); /* Exact gap compensation for 50% translation */
+  will-change: transform;
+}
+
+.standards-carousel-track .standard-item {
+  flex: 0 0 280px;
+  width: 280px;
+  min-height: 155px;
   background-color: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius-sm);
@@ -458,10 +501,17 @@ button, input, select, textarea {
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
+  box-shadow: var(--shadow-sm);
+  cursor: default;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
 }
 
-.standard-item svg {
-  color: var(--color-primary);
+.standards-carousel-track .standard-item:hover {
+  border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.standard-item img {
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -470,12 +520,45 @@ button, input, select, textarea {
   font-size: 1.05rem;
   font-weight: 700;
   margin-bottom: 4px;
+  color: var(--color-text-primary);
 }
 
 .standard-item p {
   font-size: 0.9rem;
   color: var(--color-text-secondary);
   line-height: 1.5;
+}
+
+/* Pause the track scrolling on hover or keyboard focus so user can easily read */
+.standards-carousel-wrapper:hover .standards-carousel-track,
+.standards-carousel-wrapper:focus-within .standards-carousel-track {
+  animation-play-state: paused;
+}
+
+/* Right-to-Left Continuous Scrolling Animation */
+@keyframes standardsScrollLeft {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* Activated in progressive enhancement when section is in view */
+html.js-ready .standards-carousel-track.in-view {
+  animation: standardsScrollLeft 34s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.js-ready .standards-carousel-track.in-view {
+    animation: none;
+  }
+  .standards-carousel-wrapper {
+    mask-image: none;
+    -webkit-mask-image: none;
+    overflow-x: auto;
+  }
 }
 
 /* ==========================================================================
@@ -962,6 +1045,126 @@ button, input, select, textarea {
 }
 
 /* ==========================================================================
+   Mobile Phone Action Modal (<dialog id="phone-modal">)
+   ========================================================================== */
+.phone-dialog {
+  border: none;
+  border-radius: var(--border-radius-lg);
+  padding: 0;
+  max-width: 400px;
+  width: calc(100% - 2rem);
+  box-shadow: 0 16px 40px rgba(27, 67, 50, 0.25);
+  background-color: var(--color-surface);
+  color: var(--color-text-primary);
+  margin: auto;
+  overflow: hidden;
+}
+
+.phone-dialog::backdrop {
+  background-color: rgba(25, 37, 32, 0.65);
+  backdrop-filter: blur(4px);
+}
+
+.phone-dialog-title-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.phone-dialog-icon-bubble {
+  width: 32px;
+  height: 32px;
+  border-radius: var(--border-radius-pill);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.phone-dialog-body {
+  padding: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.phone-dialog-desc {
+  font-size: 0.95rem;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.phone-dialog-number-box {
+  background-color: var(--color-surface-subtle);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--space-md);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.phone-dialog-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-text-muted);
+}
+
+.phone-dialog-number {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  letter-spacing: 0.02em;
+}
+
+.phone-dialog-hours {
+  font-size: 0.82rem;
+  color: var(--color-text-secondary);
+}
+
+.phone-dialog-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: 0.25rem;
+}
+
+.phone-call-action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: var(--color-primary);
+  color: #FFFFFF;
+  border-radius: var(--border-radius-pill);
+  font-weight: 700;
+  box-shadow: var(--shadow-sm);
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.phone-call-action-btn:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-1px);
+}
+
+.phone-continue-btn {
+  width: 100%;
+  min-height: 44px;
+  font-size: 0.95rem;
+  justify-content: center;
+  text-align: center;
+}
+
+/* ==========================================================================
    Responsive Breakpoints
    ========================================================================== */
 @media (max-width: 860px) {
@@ -974,6 +1177,25 @@ button, input, select, textarea {
     max-width: 500px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+/* Tablet Layout (specifically covering 768px):
+   Odd-numbered 3-item containers switch to 2-column grids with the 4th themed SVG card
+   filling the slot to eliminate the hole. ONLY visible in this breakpoint range. */
+@media (min-width: 601px) and (max-width: 860px) {
+  .tablet-grid-filler,
+  .feature-card.tablet-grid-filler,
+  .step-card.tablet-grid-filler {
+    display: flex !important;
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .process-steps {
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
 
@@ -1007,6 +1229,30 @@ button, input, select, textarea {
   .estimate-summary-box {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+/* Mobile Breakpoint <= 425px:
+   Phone number text is hidden, displaying only the compact phone icon badge.
+   Tapping it opens the call & continue dialog. */
+@media (max-width: 425px) {
+  .phone-badge .phone-number-text {
+    display: none;
+  }
+
+  .phone-badge {
+    padding: 0;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .phone-badge svg {
+    width: 18px;
+    height: 18px;
   }
 }
 

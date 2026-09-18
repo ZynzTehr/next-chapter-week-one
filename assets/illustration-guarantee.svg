@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" fill="none" aria-label="Illustration of Rest Easy 100% worry-free guarantee with clean checklist and satisfaction seal" role="img">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="guaranteeBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF7"/>
+      <stop offset="100%" stop-color="#E8F4EC"/>
+    </linearGradient>
+
+    <!-- Clipboard gradient -->
+    <linearGradient id="boardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D9E6DE"/>
+      <stop offset="100%" stop-color="#C2D5CA"/>
+    </linearGradient>
+
+    <!-- Golden Seal gradient -->
+    <linearGradient id="goldSeal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9D976"/>
+      <stop offset="100%" stop-color="#E9A825"/>
+    </linearGradient>
+
+    <!-- Ribbon gradient -->
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E27344"/>
+      <stop offset="100%" stop-color="#BF5426"/>
+    </linearGradient>
+
+    <!-- Shadow filter -->
+    <filter id="badgeShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#1B4332" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="360" height="240" rx="16" fill="url(#guaranteeBg)"/>
+
+  <!-- Clean Base Accent Line -->
+  <rect x="20" y="206" width="320" height="4" rx="2" fill="#D3E0D8"/>
+
+  <!-- The Rest Easy Clipboard Checklist (Left / Center) -->
+  <g filter="url(#badgeShadow)">
+    <!-- Wooden / Slate Board -->
+    <rect x="52" y="32" width="168" height="162" rx="12" fill="url(#boardGrad)"/>
+    <!-- Clip on top -->
+    <rect x="106" y="24" width="60" height="16" rx="4" fill="#3A7558"/>
+    <circle cx="136" cy="32" r="3.5" fill="#EAF5EE"/>
+    
+    <!-- Paper Sheet -->
+    <rect x="64" y="44" width="144" height="138" rx="6" fill="#FFFFFF"/>
+
+    <!-- Checklist Item 1 -->
+    <circle cx="82" cy="72" r="8" fill="#D8F3DC"/>
+    <path d="M78 72 L81 75 L87 69" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="96" y="69" width="94" height="6" rx="3" fill="#3A7558" opacity="0.85"/>
+
+    <!-- Checklist Item 2 -->
+    <circle cx="82" cy="98" r="8" fill="#D8F3DC"/>
+    <path d="M78 98 L81 101 L87 95" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="96" y="95" width="82" height="6" rx="3" fill="#3A7558" opacity="0.85"/>
+
+    <!-- Checklist Item 3 -->
+    <circle cx="82" cy="124" r="8" fill="#D8F3DC"/>
+    <path d="M78 124 L81 127 L87 121" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="96" y="121" width="90" height="6" rx="3" fill="#3A7558" opacity="0.85"/>
+
+    <!-- Checklist Item 4 -->
+    <circle cx="82" cy="150" r="8" fill="#D8F3DC"/>
+    <path d="M78 150 L81 153 L87 147" stroke="#2D6A4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="96" y="147" width="70" height="6" rx="3" fill="#3A7558" opacity="0.85"/>
+  </g>
+
+  <!-- 100% Peace of Mind Shield / Seal (Right Side) -->
+  <g filter="url(#badgeShadow)">
+    <!-- Terracotta Hanging Ribbons -->
+    <path d="M255 130 L242 188 L255 178 L268 188 Z" fill="url(#ribbonGrad)"/>
+    <path d="M280 130 L268 188 L280 178 L292 188 Z" fill="url(#ribbonGrad)" opacity="0.9"/>
+
+    <!-- Outer Golden Rosette Starburst / Circle -->
+    <circle cx="268" cy="100" r="48" fill="url(#goldSeal)"/>
+    <circle cx="268" cy="100" r="42" fill="#FAFDFB"/>
+    <circle cx="268" cy="100" r="39" fill="#2D6A4F"/>
+
+    <!-- Inner Shield Icon -->
+    <path d="M268 76 C268 76 250 82 250 94 C250 112 268 122 268 122 C268 122 286 112 286 94 C286 82 268 76 268 76 Z" fill="#E8F4EC"/>
+    <!-- Checkmark inside shield -->
+    <path d="M261 97 L266 102 L276 92" stroke="#2D6A4F" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Curved Mini Stars on Seal -->
+    <circle cx="254" cy="80" r="2" fill="#F3C053"/>
+    <circle cx="282" cy="80" r="2" fill="#F3C053"/>
+    <circle cx="268" cy="65" r="2" fill="#F3C053"/>
+  </g>
+
+  <!-- Calming Tea Mug / Pure Rest Symbol -->
+  <g>
+    <!-- Steaming Mug on right foreground -->
+    <rect x="298" y="168" width="22" height="24" rx="4" fill="#3A7558"/>
+    <path d="M320 173 C326 173 326 182 320 182" stroke="#3A7558" stroke-width="3" fill="none"/>
+    <!-- Steam -->
+    <path d="M305 160 C303 154 308 152 306 146" stroke="#A8BFB3" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+    <path d="M312 158 C314 153 310 150 312 144" stroke="#A8BFB3" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Rest Easy Floating Sparkles -->
+  <g fill="#F3C053">
+    <!-- Top left sparkle -->
+    <path d="M32 45 Q32 52 25 52 Q32 52 32 59 Q32 52 39 52 Q32 52 32 45 Z"/>
+    <!-- Center sparkle -->
+    <path d="M228 32 Q228 38 222 38 Q228 38 228 44 Q228 38 234 38 Q228 38 228 32 Z" opacity="0.9"/>
+    <!-- Bottom sparkle -->
+    <path d="M332 120 Q332 125 328 125 Q332 125 332 130 Q332 125 336 125 Q332 125 332 120 Z"/>
+  </g>
+</svg>

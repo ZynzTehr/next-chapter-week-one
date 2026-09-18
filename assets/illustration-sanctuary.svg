@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" fill="none" aria-label="Illustration of a tranquil, spotless room with warm sunlight, thriving houseplant, and cozy armchair" role="img">
+  <defs>
+    <!-- Background subtle gradient -->
+    <linearGradient id="sanctuaryBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFDF7"/>
+      <stop offset="100%" stop-color="#EAF5EE"/>
+    </linearGradient>
+    
+    <!-- Armchair gradient -->
+    <linearGradient id="sanctuaryChair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3A7558"/>
+      <stop offset="100%" stop-color="#24513C"/>
+    </linearGradient>
+
+    <!-- Warm terracotta pot gradient -->
+    <linearGradient id="sanctuaryPot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E27344"/>
+      <stop offset="100%" stop-color="#BF5426"/>
+    </linearGradient>
+
+    <!-- Window sunshine beam -->
+    <linearGradient id="sanctuarySunbeam" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF4D9" stop-opacity="0.75"/>
+      <stop offset="100%" stop-color="#E8F4EC" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Gentle shadow -->
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#1B4332" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Card Background Canvas -->
+  <rect width="360" height="240" rx="16" fill="url(#sanctuaryBg)"/>
+
+  <!-- Baseboard & Clean Floor -->
+  <rect x="20" y="200" width="320" height="4" rx="2" fill="#D3E0D8"/>
+  <line x1="30" y1="214" x2="330" y2="214" stroke="#E2ECE5" stroke-width="1.5" stroke-dasharray="6 6"/>
+
+  <!-- Arched Sunlit Window in Background -->
+  <g opacity="0.9">
+    <path d="M210 50 C210 22 238 6 270 6 C302 6 330 22 330 50 V145 H210 Z" fill="#FFFFFF" filter="url(#softShadow)"/>
+    <path d="M270 6 V145" stroke="#DFECE4" stroke-width="2"/>
+    <path d="M210 75 H330" stroke="#DFECE4" stroke-width="2"/>
+    <path d="M210 115 H330" stroke="#DFECE4" stroke-width="2"/>
+    <rect x="204" y="145" width="132" height="7" rx="3" fill="#C2D8CB"/>
+    <!-- Gentle angled sunbeam across room -->
+    <polygon points="230,55 325,85 285,200 150,200" fill="url(#sanctuarySunbeam)"/>
+  </g>
+
+  <!-- Potted Plant on Window Sill -->
+  <g>
+    <!-- Pot -->
+    <path d="M288 145 L291 126 H313 L316 145 Z" fill="url(#sanctuaryPot)"/>
+    <!-- Leaves -->
+    <path d="M302 126 C295 106 280 102 272 106 C276 117 288 120 301 125" fill="#3D7D5E"/>
+    <path d="M302 126 C312 108 330 108 334 115 C326 122 312 124 303 126" fill="#2E6349"/>
+    <path d="M302 124 C302 104 310 93 314 90 C316 101 310 112 304 124" fill="#52B788"/>
+  </g>
+
+  <!-- Cozy Sage Armchair (Zero Stress, Pure Comfort) -->
+  <g filter="url(#softShadow)">
+    <!-- Shadow under chair -->
+    <ellipse cx="118" cy="202" rx="65" ry="7" fill="#1B4332" fill-opacity="0.08"/>
+    <!-- Wooden legs -->
+    <line x1="72" y1="185" x2="64" y2="204" stroke="#8C6D4F" stroke-width="4" stroke-linecap="round"/>
+    <line x1="90" y1="185" x2="86" y2="202" stroke="#6E533A" stroke-width="3" stroke-linecap="round"/>
+    <line x1="146" y1="185" x2="150" y2="202" stroke="#6E533A" stroke-width="3" stroke-linecap="round"/>
+    <line x1="164" y1="185" x2="172" y2="204" stroke="#8C6D4F" stroke-width="4" stroke-linecap="round"/>
+    <!-- Chair backrest -->
+    <path d="M72 155 C65 110 80 85 118 85 C156 85 171 110 164 155 Z" fill="url(#sanctuaryChair)"/>
+    <!-- Seat cushion -->
+    <rect x="66" y="152" width="104" height="28" rx="14" fill="#468866"/>
+    <!-- Armrests -->
+    <rect x="56" y="132" width="18" height="42" rx="9" fill="#2C5F46"/>
+    <rect x="162" y="132" width="18" height="42" rx="9" fill="#2C5F46"/>
+    <!-- Accent throw pillow -->
+    <path d="M125 142 C125 132 142 130 148 140 C154 150 142 165 132 165 C125 165 125 152 125 142 Z" fill="#E27344" opacity="0.9"/>
+  </g>
+
+  <!-- Side Table with Relaxing Mug -->
+  <g>
+    <!-- Table surface -->
+    <ellipse cx="205" cy="165" rx="22" ry="6" fill="#DCE7E1"/>
+    <!-- Table leg -->
+    <line x1="205" y1="168" x2="205" y2="202" stroke="#8C6D4F" stroke-width="3" stroke-linecap="round"/>
+    <!-- Mug -->
+    <rect x="198" y="148" width="12" height="15" rx="3" fill="#E27344"/>
+    <path d="M210 152 C214 152 214 159 210 159" stroke="#E27344" stroke-width="2" fill="none"/>
+    <!-- Steam curls -->
+    <path d="M202 143 C201 138 205 136 203 131" stroke="#BDD1C6" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+    <path d="M206 142 C207 137 205 135 207 130" stroke="#BDD1C6" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Sparkling Clean Accents (The Rest Easy Touch) -->
+  <g fill="#F3C053">
+    <!-- Star 1 -->
+    <path d="M50 70 Q50 78 42 78 Q50 78 50 86 Q50 78 58 78 Q50 78 50 70 Z"/>
+    <!-- Star 2 -->
+    <path d="M185 45 Q185 51 179 51 Q185 51 185 57 Q185 51 191 51 Q185 51 185 45 Z" opacity="0.85"/>
+    <!-- Star 3 -->
+    <path d="M315 175 Q315 180 310 180 Q315 180 315 185 Q315 180 320 180 Q315 180 315 175 Z"/>
+  </g>
+</svg>
